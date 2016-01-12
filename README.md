@@ -8,7 +8,7 @@ Please use this repository to edit, submit, and maintain your tag templates for 
 **[Next steps](#next-steps)**
 
 ### Getting started
-To get started, create a directory for each tag for which you would like to have a separate template in Google Tag Manager.
+To get started, create a directory for each tag that you would like to have a separate template for in Google Tag Manager.
 
 Each tag's directory should contain:
   * Your tag type implementation file (with a .tpl suffix)
