@@ -2,13 +2,10 @@
 Please use this repository to edit, submit, and maintain your tag templates for inclusion in Google Tag Manager.
 
 ### Table of contents
-  * **[Getting started](#getting-started)**  
-  * **[Submitting your tag for review](#submitting-your-tag-for-review)**  
-  * **[Updating an existing tag](#updating-an-existing-tag)**  
-  * **[Next steps](#next-steps)**
-    + **[Work with the Google Team to QA and finalize your tag](work-with-the-google-team-to-qa-and-finalize-your-tag)**
-    + **[Provide approval for your tag to be publicly included in Google Tag Manager](provide-approval-for-your-tag-to-be-publicly-included-in-google-tag-manager)**
-    + **[Create a Public Tag Listing](create-a-public-tag-listing)**
+**[Getting started](#getting-started)**  
+**[Submitting your tag for review](#submitting-your-tag-for-review)**  
+**[Updating an existing tag](#updating-an-existing-tag)**  
+**[Next steps](#next-steps)**
 
 ### Getting started
 To get started, create a directory for each tag for which you would like to have a separate template in Google Tag Manager.
