@@ -5,7 +5,7 @@ Please use this repository to edit, submit, and maintain your tag templates for 
 **[Getting started](#getting-started)**  
 **[Submitting a new tag for review](#submitting-a-new-tag-for-review)**  
 **[Updating an existing tag](#updating-an-existing-tag)**  
-**[Managing access](#managing-access)**
+**[Managing access](#managing-access)**  
 **[Next steps](#next-steps)**
 
 ### Getting started
@@ -33,7 +33,7 @@ To request a change to a tag template that has already been included in Google T
 ### Managing access
 
 When you registered your Company Profile in the [Google Tag Manager Partner Portal](https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/), you should have provided:
-  * **Github users:** a list of Github usernames that you wanted to have access to this repository. Each username you provided should have been granted Admin access to this repository. You can optionally add/remove users or modify their rights via the Collaborators section of this repository's settings.
+  * **Github Users:** a list of Github usernames that you wanted to have access to this repository. Each username you provided should have been granted Admin access to this repository. You can optionally add/remove users or modify their rights via the Collaborators section of this repository's settings.
   * **E-mail List A:** a list of e-mail addresses (please use corporate e-mail addresses; not g-mail) that should be permitted to request changes to the version of the tag template published in Google Tag Manager.
   * **E-mail List B:** a list of e-mail addresses that should be permitted to add new e-mail addresses to List A above.
 
