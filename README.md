@@ -3,7 +3,7 @@ Please use this repository to edit, submit, and maintain your tag templates for 
 
 ### Table of contents
 **[Getting started](#getting-started)**  
-**[Submitting your tag for review](#submitting-your-tag-for-review)**  
+**[Submitting a new tag for review](#submitting-a-new-tag-for-review)**  
 **[Updating an existing tag](#updating-an-existing-tag)**  
 **[Next steps](#next-steps)**
 
@@ -17,23 +17,25 @@ Each tag's directory should contain:
 
 To write your tag type implementation, please review and follow the **[Vendor Template Spec](https://github.com/gtm-vendor-templates/template-spec/blob/master/README.md)**
 
-### Submitting your tag for review
+### Submitting a new tag for review
 
-When your tag template is ready for review, the user who registered your Company Profile in the [Google Tag Manager Partner Portal](https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/) should return to the [portal](https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/) to begin Step 3, Registering a Tag.
+When you have a new tag ready for review, the user who registered your Company Profile in the [Google Tag Manager Partner Portal](https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/) should return to the [portal](https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/) to begin Step 3, Registering a Tag.
 
-In that registration, you will be asked to provide a link to the Github version of your tag that's ready for review, as well as to provide:
-  * **List A:** a list of e-mail addresses (please use corporate e-mail addresses; not g-mail) that should be permitted to request changes to the version of the tag template published in Google Tag Manager
-  * **List B:** a list of e-mail addresses that should be permitted to add new e-mail addresses to List A above
-
-Should you need to make a change to the version of your tag template published in Google Tag Manager in the future, we will need to receive an e-mail from one of the addresses included in List A.
-
-To update either list after your tag template has been submitted for approval, please send an e-mail to <gtm-tag-vendor-admin@google.com>. This e-mail must be sent from an e-mail address provided in List B.
-
-As a best practice, please include multiple e-mail addresses on both lists in case you or someone else leaves your company or is otherwise unavailable.
+In that registration, you will be asked to provide a link to the Github commit (e.g. "[https://github.com/gtm-vendor-templates/<i>your-company</i>/commit/<i>ae1d34c69612c0c190abe2d0f5067f6a6728d515</i>](#)") of your tag files that's ready for review.
 
 ### Updating an existing tag
 
 To request a change to a tag template that has already been included in Google Tag Manager, please first make your changes in Github. Then, send an email to <gtm-tag-vendor-admin@google.com> with a link to the specific version of your tag that's ready to be reviewed for update.
+
+When you registered your Company Profile in the [Google Tag Manager Partner Portal](https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/), you should have provided:
+  * **List A:** a list of e-mail addresses (please use corporate e-mail addresses; not g-mail) that should be permitted to request changes to the version of the tag template published in Google Tag Manager
+  * **List B:** a list of e-mail addresses that should be permitted to add new e-mail addresses to List A above
+
+Should you need to make a change to the version of your tag template published in Google Tag Manager, we will need to receive an e-mail from one of the addresses included in List A.
+
+To update either list after your tag template has been submitted for approval, please send an e-mail to <gtm-tag-vendor-admin@google.com>. This e-mail must be sent from an e-mail address provided in List B.
+
+**As a best practice, please include multiple e-mail addresses on both lists in case you or someone else leaves your company or is otherwise unavailable.**
 
 ### Next steps
 
