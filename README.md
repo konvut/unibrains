@@ -24,11 +24,11 @@ When you have a new tag ready for review, the user who registered your Company P
 
 In that registration, you will be asked to provide a link to the Github commit (e.g. "[https://github.com/gtm-vendor-templates/<i>your-company</i>/commit/<i>ae1d34c69612c0c190abe2d0f5067f6a6728d515</i>](#)") of your tag files that's ready for review.
 
-Then, see [Next steps](#next-steps) below for info on how to proceed.
+Then, see [Next steps](#next-steps)  for info on how to proceed.
 
 ### Updating an existing tag
 
-To request a change to a tag template that has already been included in Google Tag Manager, please first make your changes in Github. Then, send an email to <gtm-tag-vendor-admin@google.com> with a link to the specific Github commit of your tag files that's ready to be reviewed for update. (This e-mail must come from an address included in 'E-mail List A' as described in the [Managing access](#managing-access) section below.)
+To request a change to a tag template that has already been included in Google Tag Manager, please first make your changes in Github. Then, send an email to <gtm-tag-vendor-admin@google.com> with a link to the specific Github commit of your tag files that's ready to be reviewed for update. (This e-mail must come from an address included in 'E-mail List A' as described in the [Managing access](#managing-access) section .)
 
 ### Managing access
 
@@ -55,7 +55,7 @@ After you register your tag in the <a href="https://gtm-partner-gallery.appspot.
   * Please QA your tag template, and repeat any steps above as necessary until you are satisfied that your tag is ready to be publicly included in Google Tag Manager
 
 ##### Provide approval for your tag to be publicly included in Google Tag Manager
-  * Once you are satisfied that your tag is ready to be included in Google Tag Manager, send an e-mail to <gtm-tag-vendor-admin@google.com> with a link to the specific Github commit of your tag files that's ready to be published. (This e-mail must come from an address included in 'E-mail List A' as described in the [Managing access](#managing-access) section below.)
+  * Once you are satisfied that your tag is ready to be included in Google Tag Manager, send an e-mail to <gtm-tag-vendor-admin@google.com> with a link to the specific Github commit of your tag files that's ready to be published. (This e-mail must come from an address included in 'E-mail List A' as described in the [Managing access](#managing-access) section.)
 
 ##### Create a Public Tag Listing
   * Once we receive approval to publish your tag, your tag registration in the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">Google Tag Manager Partner Portal</a> will be marked as Approved
