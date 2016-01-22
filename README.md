@@ -13,7 +13,7 @@ To get started, create a directory for each tag that you would like to have a se
 
 Each tag's directory should contain:
   * Your tag type implementation file (with a .tpl suffix)
-  * Any separate JavaScript files references in your tag type implementation
+  * Any separate JavaScript files referenced in your tag type implementation
   * Your logo file
 
 To write your tag type implementation, please review and follow the **<a href="https://github.com/gtm-vendor-templates/template-spec/blob/master/README.md" target="_blank">Vendor Template Spec</a>**
