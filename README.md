@@ -20,11 +20,7 @@ To write your tag type implementation, please review and follow the **<a href="h
 
 ### Submitting a new tag for review
 
-When you have a new tag ready for review, the user who registered your Company Profile in the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">Google Tag Manager Partner Portal</a> should return to the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">portal</a> to begin Step 3, Registering a Tag.
-
-In that registration, you will be asked to provide a link to the Github commit (e.g. "[https://github.com/gtm-vendor-templates/<i>your-company</i>/commit/<i>ae1d34c69612c0c190abe2d0f5067f6a6728d515</i>](#)") of your tag files that's ready for review.
-
-Then, see [Next steps](#next-steps)  for info on how to proceed.
+When you have a new tag ready for review, please send an email to <gtm-tag-vendor-admin@google.com> with a link to the specific Github commit (e.g. "[https://github.com/gtm-vendor-templates/<i>your-company</i>/commit/<i>ae1d34c69612c0c190abe2d0f5067f6a6728d515</i>](#)") of your tag files that's ready for review. (This e-mail must come from an address included in 'E-mail List A' as described in the [Managing access](#managing-access) section.)
 
 ### Updating an existing tag
 
@@ -32,7 +28,7 @@ To request a change to a tag template that has already been included in Google T
 
 ### Managing access
 
-When you registered your Company Profile in the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">Google Tag Manager Partner Portal</a>, you should have provided:
+After you submitted your tag registration, you should have been asked to provide via e-mail:
   * **Github Users:** a list of Github usernames that you wanted to have access to this repository. Each username you provided should have been granted Admin access to this repository. You can optionally add/remove users or modify their rights via the Collaborators section of this repository's settings.
   * **E-mail List A:** a list of e-mail addresses (please use corporate e-mail addresses; not g-mail) that should be permitted to request changes to the version of the tag template published in Google Tag Manager.
   * **E-mail List B:** a list of e-mail addresses that should be permitted to add new e-mail addresses to List A above.
@@ -45,7 +41,7 @@ To update either E-mail List after your tag template has been submitted for appr
 
 ### Next steps
 
-After you register your tag in the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">Google Tag Manager Partner Portal</a>:
+After you [e-mail us to submit a tag for review](#submitting-a-new-tag-for-review):
 
 ##### Work with the Google Team to QA and finalize your tag
   * Someone from the Google Tag Manager team will review the version of your tag template as of the Github commit that you have submitted for review, commenting on any issues
@@ -56,7 +52,8 @@ After you register your tag in the <a href="https://gtm-partner-gallery.appspot.
 
 ##### Provide approval for your tag to be publicly included in Google Tag Manager
   * Once you are satisfied that your tag is ready to be included in Google Tag Manager, send an e-mail to <gtm-tag-vendor-admin@google.com> with a link to the specific Github commit of your tag files that's ready to be published. (This e-mail must come from an address included in 'E-mail List A' as described in the [Managing access](#managing-access) section.)
+  * It may still take a number of weeks for your tag to be launched within Google Tag Manger, as it will be tied to a forthcoming release.
 
 ##### Create a Public Tag Listing
-  * Once we receive approval to publish your tag, your tag registration in the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">Google Tag Manager Partner Portal</a> will be marked as Approved
+  * Once we receive approval to publish your tag, your tag registration in the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">Google Tag Manager Partner Portal</a> will be marked as Approved (if it hasn't already been)
   * Next, from the <a href="https://gtm-partner-gallery.appspot.com/tagmanager/partners/owner/profile/company/" target="_blank">Google Tag Manager Partner Portal</a>, complete Step 3 to create a Public Tag Listing. This listing will not impact how your tag template is displayed in Google Tag Manager, but may be used to provide information about your tags in the Google Tag Manager Developer documentation and/or marketing website.
