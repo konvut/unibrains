@@ -1,0 +1,84 @@
+﻿function main() {
+  //введите id таблиц, чтобы загружать отчет в неё. иначе будет создана новая таблица.
+  var params = {'spreadSheetId': false};
+  exportBadURLs({});
+}
+function getReport(reportConfig){
+  var query = 'SELECT ';
+  if(reportConfig.parameters){
+   query+= reportConfig.parameters;
+    if(reportConfig.reportName){
+     query+= ' FROM '+reportConfig.reportName; 
+      if(reportConfig.filters){
+       query+= ' WHERE '+ reportConfig.filters
+      } 
+      if(reportConfig.during){
+       query+= ' DURING '+ reportConfig.during
+      } 
+      
+    } else {
+       Logger.log('no report selected')
+       return false;
+    }
+  } else {
+    Logger.log('no params selected')
+    return false;
+  }
+  try{
+    return AdWordsApp.report(query);
+  } catch(e){
+    Logger.log(e);
+    return false;
+  }
+}
+
+function exportBadURLs(params) {
+  //Создаем таблицу Google
+  var report = getReport({
+    parameters:'FinalDestinationUrl',
+    reportName: 'FINAL_URL_REPORT',
+    
+  });
+  badURLs = [];
+  var rows = report.rows();
+  while (rows.hasNext()) {
+   var row = rows.next();
+    if((checkURL(row.EffectiveFinalUrl) == 404) || !checkURL(row.EffectiveFinalUrl)) { 
+      badURLs.push(row.EffectiveFinalUrl); 
+    }  
+  }
+  
+  var report = getReport({
+    parameters:'CampaignName, AdGroupName, EffectiveDestinationUrl',
+    reportName: 'FINAL_URL_REPORT',
+    filters:"EffectiveFinalUrl IN ['"+badURLs.join(',')+"']"
+  });
+   var date = new Date();
+  var dateString = date.getYear()+'-'+date.getMonth()+'-'+date.getDay();
+  if(params.spreadSheetId){
+   var spreadSheet = SpreadsheetApp.openById(params.spreadSheetId);
+  } else{
+  var spreadSheet = SpreadsheetApp.create('404 отчет по невалидным ссылка для аккаунта '+AdWordsApp.currentAccount().getName()+' за '+dateString);
+  }  
+  var sheet = spreadSheet.getActiveSheet().clear();
+  sheet.appendRow(['Кампания','Группа','Проблемный URL']);
+   var rows = report.rows();
+  while (rows.hasNext()) {
+   var row = rows.next();
+   sheet.appendRow([row.CampaignName,row.AdGroupName,row.EffectiveFinalUrl])
+  }
+  Logger.log(spreadSheet.getUrl());  
+}
+
+function checkURL(url){
+ 
+    //Проверяем код ответа сервера
+  try{
+    var response = UrlFetchApp.fetch(encodeURI(url),{'muteHttpExceptions':true});
+    return response.getResponseCode();
+  } catch(e){
+   Logger.log(e);
+   return false; 
+  }
+  
+}
