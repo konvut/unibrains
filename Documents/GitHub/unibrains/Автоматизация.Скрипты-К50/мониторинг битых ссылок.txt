@@ -1,7 +1,10 @@
-﻿function main() {
-  //введите id таблиц, чтобы загружать отчет в неё. иначе будет создана новая таблица.
-  var params = {'spreadSheetId': false};
-  exportBadURLs({});
+function main() {
+  var params = {
+    //вставьте id таблицы google, чтобы экспортировать туда данные (иначе будет создана новая таблица). Ссылка на таблицу будет указана в журнале
+    'spreadSheetId': ''
+  
+  };
+  exportBadURLs(params);
 }
 function getReport(reportConfig){
   var query = 'SELECT ';
@@ -35,7 +38,7 @@ function getReport(reportConfig){
 function exportBadURLs(params) {
   //Создаем таблицу Google
   var report = getReport({
-    parameters:'FinalDestinationUrl',
+    parameters:'EffectiveFinalUrl',
     reportName: 'FINAL_URL_REPORT',
     
   });
@@ -49,13 +52,13 @@ function exportBadURLs(params) {
   }
   
   var report = getReport({
-    parameters:'CampaignName, AdGroupName, EffectiveDestinationUrl',
+    parameters:'CampaignName, AdGroupName, EffectiveFinalUrl',
     reportName: 'FINAL_URL_REPORT',
     filters:"EffectiveFinalUrl IN ['"+badURLs.join(',')+"']"
   });
    var date = new Date();
   var dateString = date.getYear()+'-'+date.getMonth()+'-'+date.getDay();
-  if(params.spreadSheetId){
+  if(params.spreadSheetId && params.spreadSheetId != ''){
    var spreadSheet = SpreadsheetApp.openById(params.spreadSheetId);
   } else{
   var spreadSheet = SpreadsheetApp.create('404 отчет по невалидным ссылка для аккаунта '+AdWordsApp.currentAccount().getName()+' за '+dateString);
